@@ -1,0 +1,35 @@
+IDS Audit Log (most recent event first)
+========================================
+
+ENGINE_DONE | packets=139 alerts=25
+ALERT | Suspicious Payload | src=172.16.0.5 payload snippet="malware payload attack"
+ALERT | Large Packet | src=172.16.0.5 size=1500
+ALERT | Suspicious Port | src=172.16.0.5 dst=192.168.1.9 port=445
+ALERT | Suspicious Payload | src=172.16.0.5 payload snippet="admin password exploit shell"
+ALERT | Large Packet | src=172.16.0.5 size=1600
+ALERT | Suspicious Port | src=172.16.0.5 dst=192.168.1.9 port=3389
+NEW_IP | 172.16.0.5 | first seen at 10:03:01
+NEW_IP | 10.0.0.8 | first seen at 10:02:0
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Port | src=192.168.1.50 dst=192.168.1.1 port=25
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Port | src=192.168.1.50 dst=192.168.1.1 port=23
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Port | src=192.168.1.50 dst=192.168.1.1 port=22
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+ALERT | Suspicious Port | src=192.168.1.50 dst=192.168.1.1 port=21
+ALERT | Suspicious Payload | src=192.168.1.50 payload snippet="port probe login attempt"
+NEW_IP | 192.168.1.50 | first seen at 10:01:10
+NEW_IP | 192.168.1.20 | first seen at 10:00:02
+NEW_IP | 192.168.1.10 | first seen at 10:00:01
+ENGINE_START | input=C:\Users\HP\Downloads\files\sample_packets.csv

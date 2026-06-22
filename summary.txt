@@ -1,0 +1,25 @@
+Simplified IDS Report
+=====================
+
+Total Packets Analyzed: 139
+Total Source IPs Found: 5
+Total Alerts Generated: 25
+Most Suspicious IP:     10.0.0.8
+Highest Threat Score:   480
+
+Data Structures Used
+--------------------
+  Queue          : packet ingestion buffer
+  Stack          : audit event log
+  Linked List    : alert chain
+  BST            : IP stats lookup & sorted traversal
+  Max-Heap       : top-threat IP ranking
+  Priority Queue : alert dispatch pipeline
+
+IP Statistics (BST in-order -> sorted by score)
+------------------------------------------------
+10.0.0.8 | Packets: 120 | SYN: 120 | Suspicious Ports: 0 | Large Packets: 0 | Keywords: 0 | Score: 480 | Risk: HIGH
+172.16.0.5 | Packets: 2 | SYN: 2 | Suspicious Ports: 2 | Large Packets: 2 | Keywords: 2 | Score: 78 | Risk: MEDIUM
+192.168.1.10 | Packets: 1 | SYN: 0 | Suspicious Ports: 0 | Large Packets: 0 | Keywords: 0 | Score: 1 | Risk: LOW
+192.168.1.20 | Packets: 1 | SYN: 0 | Suspicious Ports: 0 | Large Packets: 0 | Keywords: 0 | Score: 1 | Risk: LOW
+192.168.1.50 | Packets: 15 | SYN: 15 | Suspicious Ports: 4 | Large Packets: 0 | Keywords: 15 | Score: 400 | Risk: HIGH

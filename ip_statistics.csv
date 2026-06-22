@@ -1,0 +1,6 @@
+rank,ip,packets,syn,suspicious_ports,large_packets,keywords,score,risk
+1,10.0.0.8,120,120,0,0,0,480,HIGH
+2,192.168.1.50,15,15,4,0,15,400,HIGH
+3,172.16.0.5,2,2,2,2,2,78,MEDIUM
+4,192.168.1.10,1,0,0,0,0,1,LOW
+5,192.168.1.20,1,0,0,0,0,1,LOW
